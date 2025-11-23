@@ -1,6 +1,6 @@
 title: "Kalinoff"
-url: "https://kalinof.github.io" # set to your site url when deploying
-baseurl: "/kalinoff_website" # e.g. /kalinoff_website if served from a subfolder
+url: "https://kalinoff.com" # set to your site url when deploying
+baseurl: "" # e.g. /kalinoff_website if served from a subfolder
 
 theme: minima
 plugins:
