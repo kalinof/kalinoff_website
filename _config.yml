@@ -1,0 +1,17 @@
+title: "Kalinoff"
+url: "" # set to your site url when deploying
+baseurl: "" # e.g. /kalinoff_website if served from a subfolder
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude build artifacts
+exclude:
+  - README.md
+  - node_modules
+  - package-lock.json
+  - package.json
+  - tailwind.config.js
+  - postcss.config.js
