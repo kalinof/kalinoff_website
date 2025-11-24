@@ -20,33 +20,13 @@ layout: none
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | relative_url }}">
   <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-96x96.png' | relative_url }}" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}" />
   <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" />
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}" />
   <meta name="apple-mobile-web-app-title" content="Kalinoff" />
   <link rel="manifest" href="{{ '/assets/images/site.webmanifest' | relative_url }}" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            display: ['DM Sans', 'Inter', 'system-ui', 'sans-serif'],
-          },
-          boxShadow: {
-            glow: '0 20px 80px -30px rgba(15,23,42,0.6)',
-          },
-        }
-      }
-    }
-  </script>
-  <style>
-    body {
-      font-family: 'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
-    }
-  </style>
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900 flex items-start justify-center px-4 pt-16 pb-24 sm:pt-20 sm:pb-28 relative overflow-x-hidden transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
   <div class="pointer-events-none absolute inset-0 overflow-hidden">
@@ -57,8 +37,8 @@ layout: none
 
   <div class="absolute inset-x-6 top-6 flex items-center justify-between">
     <div class="flex items-center">
-      <img src="{{ '/assets/images/kalinoff_black.webp' | relative_url }}" alt="Kalinoff wordmark" class="h-10 w-auto select-none opacity-90 dark:hidden">
-      <img src="{{ '/assets/images/kalinoff_white.webp' | relative_url }}" alt="Kalinoff wordmark" class="h-10 w-auto select-none opacity-90 hidden dark:block">
+      <img src="{{ '/assets/images/kalinoff_black.webp' | relative_url }}" alt="Kalinoff wordmark" class="h-10 w-auto select-none opacity-90 dark:hidden" width="196" height="73">
+      <img src="{{ '/assets/images/kalinoff_white.webp' | relative_url }}" alt="Kalinoff wordmark" class="h-10 w-auto select-none opacity-90 hidden dark:block" width="196" height="73">
     </div>
 
     <button id="theme-toggle" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-3 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md dark:border-slate-700 dark:bg-slate-900/80 dark:text-slate-100">
@@ -83,7 +63,7 @@ layout: none
         <div class="relative">
           <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-sky-500 via-indigo-500 to-emerald-400 blur-2xl opacity-60"></div>
           <div class="relative h-32 w-32 rounded-full overflow-hidden ring-4 ring-white shadow-xl shadow-indigo-500/20 dark:ring-slate-900">
-            <img src="{{ '/assets/images/kalinoff@0.5x.png' | relative_url }}" alt="Portrait of Valentin Kalinov" class="h-full w-full object-cover" loading="lazy" />
+            <img src="{{ '/assets/images/kalinoff@0.5x.png' | relative_url }}" alt="Portrait of Valentin Kalinov" class="h-full w-full object-cover" width="270" height="260" fetchpriority="high" />
           </div>
         </div>
 
